@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="广州泷铧信息科技有限公司">
+    <meta name="description" content="驱动数据科学应用于业务 泷铧信息致力于提供基于AI技术的数据科学服务，包括RPA工具及大数据的智能化分析及应用。">
+    <title>广州泷铧信息科技有限公司</title>
+
+    <link rel="shortcut icon" href="<%= context.config.publicPath +'favicon.ico'%>" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/bootstrap.min.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/all.min.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/ionicons.min.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/flaticon.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/Chart.min.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/magnific-popup.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/owl.carousel.min.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/wow.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/slick-theme.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/slick.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'revslider/css/rs6.css'%>">
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/xamin-style.css'%>" />
+    <link rel="stylesheet" type="text/css" href="<%= context.config.publicPath +'css/responsive.css'%>" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="<%= context.config.publicPath +'css/2.847e01e0.chunk.css'%>" />
+    <link rel="stylesheet" href="<%= context.config.publicPath +'css/main.85c40ad6.chunk.css'%>" />
+</head>
+
+<body>
+    <noscript>Out-of-the-box mid-stage front/design solution!</noscript>
+    <div id="root">
+        <style>
+            html,
+            body,
+            #root {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #root {
+                background-image: url('<%= context.config.publicPath +"home_bg.png"%>');
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+            }
+            
+            .page-loading-warp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 98px;
+            }
+            
+            .ant-spin {
+                position: absolute;
+                display: none;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                color: rgba(0, 0, 0, 0.65);
+                color: #1890ff;
+                font-size: 14px;
+                font-variant: tabular-nums;
+                line-height: 1.5;
+                text-align: center;
+                list-style: none;
+                opacity: 0;
+                -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                -webkit-font-feature-settings: 'tnum';
+                font-feature-settings: 'tnum';
+            }
+            
+            .ant-spin-spinning {
+                position: static;
+                display: inline-block;
+                opacity: 1;
+            }
+            
+            .ant-spin-dot {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                font-size: 20px;
+            }
+            
+            .ant-spin-dot-item {
+                position: absolute;
+                display: block;
+                width: 9px;
+                height: 9px;
+                background-color: #1890ff;
+                border-radius: 100%;
+                -webkit-transform: scale(0.75);
+                -ms-transform: scale(0.75);
+                transform: scale(0.75);
+                -webkit-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                opacity: 0.3;
+                -webkit-animation: antspinmove 1s infinite linear alternate;
+                animation: antSpinMove 1s infinite linear alternate;
+            }
+            
+            .ant-spin-dot-item:nth-child(1) {
+                top: 0;
+                left: 0;
+            }
+            
+            .ant-spin-dot-item:nth-child(2) {
+                top: 0;
+                right: 0;
+                -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+            }
+            
+            .ant-spin-dot-item:nth-child(3) {
+                right: 0;
+                bottom: 0;
+                -webkit-animation-delay: 0.8s;
+                animation-delay: 0.8s;
+            }
+            
+            .ant-spin-dot-item:nth-child(4) {
+                bottom: 0;
+                left: 0;
+                -webkit-animation-delay: 1.2s;
+                animation-delay: 1.2s;
+            }
+            
+            .ant-spin-dot-spin {
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-animation: antrotate 1.2s infinite linear;
+                animation: antRotate 1.2s infinite linear;
+            }
+            
+            .ant-spin-lg .ant-spin-dot {
+                width: 32px;
+                height: 32px;
+                font-size: 32px;
+            }
+            
+            .ant-spin-lg .ant-spin-dot i {
+                width: 14px;
+                height: 14px;
+            }
+            
+            @media all and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+                .ant-spin-blur {
+                    background: #fff;
+                    opacity: 0.5;
+                }
+            }
+            
+            @-webkit-keyframes antSpinMove {
+                to {
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes antSpinMove {
+                to {
+                    opacity: 1;
+                }
+            }
+            
+            @-webkit-keyframes antRotate {
+                to {
+                    -webkit-transform: rotate(405deg);
+                    transform: rotate(405deg);
+                }
+            }
+            
+            @keyframes antRotate {
+                to {
+                    -webkit-transform: rotate(405deg);
+                    transform: rotate(405deg);
+                }
+            }
+        </style>
+    </div>
+
+    <script data-cfasync="false" src="scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Appear JS -->
+    <script src="js/appear.js"></script>
+    <!-- Countdown JS -->
+    <script src="js/countdown.js"></script>
+    <!-- CountTo JS -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Chart JS -->
+    <script src="js/Chart.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <!-- Slick JS -->
+    <script src="js/slick.min.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Isotope JS-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- REVOLUTION SLIDER JS-->
+    <script src="revslider/js/revolution.tools.min.js"></script>
+    <script src="revslider/js/rs6.min.js"></script>
+    <script src="js/revslider-custom.js"></script>
+    <!-- Custom JS-->
+    <script src="js/xamin-custom.js"></script>
+    <script data-cfasync="false" src="scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        if (typeof revslider_showDoubleJqueryError === "undefined") {
+            function revslider_showDoubleJqueryError(sliderID) {
+                var err = "<div class='rs_error_message_box'>";
+                err += "<div class='rs_error_message_oops'>Oops...</div>";
+                err += "<div class='rs_error_message_content'>";
+                err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+                err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' ->  'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+                err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+                err += "</div>";
+                err += "</div>";
+                jQuery(sliderID).show().html(err);
+            }
+        }
+    </script>
+
+    <script src="js/2.60759632.chunk.js"></script>
+    <script src="js/main.cc9c0e11.chunk.js"></script>
+</body>
+
+</html>

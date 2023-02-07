@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  website-web:
+    restart: always
+    image: registry.cn-shenzhen.aliyuncs.com/yding/website-web:develop_lh
+    container_name: website-web
+    ports:
+      - 8012:80
